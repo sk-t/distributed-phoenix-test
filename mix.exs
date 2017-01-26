@@ -17,7 +17,7 @@ defmodule SKT.DistributedPhoenixTest.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {SKT.DistributedPhoenixTest, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :peerage]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,6 +31,7 @@ defmodule SKT.DistributedPhoenixTest.Mixfile do
     [{:phoenix, "~> 1.2.1"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:peerage, "~> 0.3.4"}]
   end
 end
